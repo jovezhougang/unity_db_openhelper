@@ -188,7 +188,7 @@ namespace com.jove.sqlite
                             sql.Append($"DELETE FROM {tableName} ");
                             if (!string.IsNullOrEmpty(where))
                             {
-                                sql.Append($" WHERE {@where}");
+                                sql.Append($" WHERE {where}");
                             }
                             sql.Append(";");
                             command.CommandText = sql.ToString();
